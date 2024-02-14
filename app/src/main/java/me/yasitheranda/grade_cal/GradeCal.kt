@@ -26,13 +26,16 @@ class GradeCal : AppCompatActivity() {
                 if (marks in 0..100) { // Check if marks are within the range 0 to 100
                     val grade = calculateGrade(marks)
                     resultTextView.text = "Grade: $grade"
+                    resultTextView.setTextColor(Color.parseColor("#0048E1"))
+                    resultTextView.textSize = 50f
                 } else {
                     resultTextView.text = "Marks should be between 0 and 100"
                     resultTextView.setTextColor(Color.RED)
-                }
+                    resultTextView.textSize = 32f                }
             } else {
                 resultTextView.text = "Please enter marks"
                 resultTextView.setTextColor(Color.RED)
+                resultTextView.textSize = 50f
             }
         }
 
