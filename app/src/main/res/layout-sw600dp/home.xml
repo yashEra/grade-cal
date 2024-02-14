@@ -13,7 +13,7 @@
         android:enabled="false"
         android:text="Grade Calc V1"
         android:textColor="#006EFF"
-        android:textSize="32dp"
+        android:textSize="50dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,26 +41,8 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/gradecal"
-        android:layout_width="350dp"
-        android:layout_height="201dp"
-        android:background="@drawable/roundrect"
-        android:fontFamily="@font/inter_bold"
-        android:text="Grade Calculator"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.495"
-        tools:ignore="MissingConstraints" />
-
-    <Button
         android:id="@+id/avgcal"
-        android:layout_width="350dp"
+        android:layout_width="550dp"
         android:layout_height="201dp"
         android:background="@drawable/roundrect"
         android:fontFamily="@font/inter_bold"
@@ -70,10 +52,26 @@
         android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.958"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.495"
+        app:layout_constraintVertical_bias="0.525"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/gradecal"
+        android:layout_width="550dp"
+        android:layout_height="201dp"
+        android:background="@drawable/roundrect"
+        android:fontFamily="@font/inter_bold"
+        android:text="Grade Calculator"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
