@@ -8,11 +8,11 @@ import android.widget.Button
 import me.yasitheranda.grade_cal.MainActivity
 import me.yasitheranda.grade_cal.R
 
-class GradeCal : AppCompatActivity() {
+class AvgCal : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.grade_cal)
+        setContentView(R.layout.avg_cal)
 
         val homeButton: Button = findViewById(R.id.home)
 
