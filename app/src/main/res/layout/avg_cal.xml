@@ -7,52 +7,68 @@
     tools:context=".AvgCal">
 
     <TextView
-        android:id="@+id/gadecalt"
+        android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:enabled="false"
-        android:text="Avarage Calculator"
+        android:text="Average Calculator"
         android:textColor="#0048E1"
-        android:textSize="32dp"
+        android:textSize="32sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081" />
+        app:layout_constraintBottom_toTopOf="@+id/averageButton"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/marksContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintBottom_toTopOf="@+id/averageButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <!-- Add EditText fields dynamically for each mark -->
+        <!-- Adjust the layout parameters and attributes as needed -->
+
+    </LinearLayout>
 
     <Button
-        android:id="@+id/home"
-        android:layout_width="232dp"
-        android:layout_height="50dp"
-        android:background="@drawable/btn_bg"
-        android:text="Home"
-        android:textSize="21dp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/averageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Average"
+        app:layout_constraintTop_toBottomOf="@+id/marksContainer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.918"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="16dp"/>
 
     <TextView
-        android:id="@+id/gradecal2"
-        android:layout_width="350dp"
-        android:layout_height="230dp"
-        android:background="@drawable/roundrect"
-        android:enabled="false"
-        android:text="TextView"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0048E1"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/averageButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
