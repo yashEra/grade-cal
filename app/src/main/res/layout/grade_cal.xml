@@ -7,20 +7,73 @@
     tools:context=".GradeCal">
 
     <TextView
-        android:id="@+id/textView3"
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:enabled="false"
+    android:text="Grade Calculator"
+    android:fontFamily="@font/inter_bold"
+    android:textColor="#0048E1"
+    android:textSize="32dp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.081" />
+
+    <TextView
+        android:id="@+id/gradeView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:enabled="false"
-        android:text="Grade Calc V1"
-        android:textColor="#006EFF"
-        android:textSize="32dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="grade: ?"
+        android:textAlignment="center"
+        android:textColor="#0048E1"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245" />
+
+    <TextView
+        android:id="@+id/marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:fontFamily="@font/inter_bold"
+        android:text="Enter your marks"
+        android:textColor="#0048E1"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
+
+    <Button
+        android:id="@+id/calculateg"
+        android:layout_width="232dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_bg"
+        android:textAllCaps="false"
+        android:text="Calculate"
+        android:textColor="@color/white"
+        android:textSize="21dp"
+        android:fontFamily="@font/inter_bold"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081" />
+        app:layout_constraintVertical_bias="0.609"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/home"
@@ -28,7 +81,9 @@
         android:layout_height="50dp"
         android:background="@drawable/btn_bg"
         android:text="Home"
+        android:textAllCaps="false"
         android:textSize="21dp"
+        android:fontFamily="@font/inter_bold"
         android:textStyle="bold"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,20 +94,27 @@
         app:layout_constraintVertical_bias="0.918"
         tools:ignore="MissingConstraints" />
 
-    <TextView
+    <EditText
         android:id="@+id/gradecalculator"
         android:layout_width="350dp"
-        android:layout_height="230dp"
+        android:layout_height="55dp"
+        android:textSize="21dp"
         android:background="@drawable/roundrect"
-        android:enabled="false"
-        android:text="TextView"
+        android:enabled="true"
+        android:focusable="true"
+        android:hint="Ex: 90"
+        android:inputType="number"
+        android:fontFamily="@font/inter_bold"
         android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#9CFFF9 "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271"
+        app:layout_constraintVertical_bias="0.52"
         tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

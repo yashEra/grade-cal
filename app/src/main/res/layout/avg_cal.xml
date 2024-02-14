@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:enabled="false"
         android:text="Avarage Calculator"
-        android:textColor="#006EFF"
+        android:textColor="#0048E1"
         android:textSize="32dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

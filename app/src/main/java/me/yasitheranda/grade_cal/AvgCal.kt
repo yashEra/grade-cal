@@ -5,8 +5,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import me.yasitheranda.grade_cal.MainActivity
-import me.yasitheranda.grade_cal.R
 
 class AvgCal : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -17,7 +15,7 @@ class AvgCal : AppCompatActivity() {
         val homeButton: Button = findViewById(R.id.home)
 
         homeButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
             finish()
 
