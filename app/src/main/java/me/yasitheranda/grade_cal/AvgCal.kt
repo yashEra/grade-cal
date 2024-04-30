@@ -10,7 +10,7 @@ import android.widget.EditText
 import android.widget.TextView
 
 class AvgCal : AppCompatActivity() {
-    private val marks = mutableListOf<Int>() // List to store entered marks
+    private val marks = mutableListOf<Int>()
     private lateinit var addedMarksTextView: TextView
 
     @SuppressLint("MissingInflatedId")

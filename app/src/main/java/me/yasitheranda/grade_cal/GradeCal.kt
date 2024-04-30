@@ -23,7 +23,7 @@ class GradeCal : AppCompatActivity() {
             val marksText = marksEditText.text.toString()
             if (marksText.isNotEmpty()) {
                 val marks = marksText.toInt()
-                if (marks in 0..100) { // Check if marks are within the range 0 to 100
+                if (marks in 0..100) {
                     val grade = calculateGrade(marks)
                     resultTextView.text = "Grade: $grade"
                     resultTextView.setTextColor(Color.parseColor("#0048E1"))
